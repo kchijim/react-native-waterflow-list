@@ -9,7 +9,7 @@ import {
 import { isPromise } from 'react-native-waterflow-list/src/utils';
 import { Colunm } from './Column';
 
-interface IFlatListProps<T> extends FlatListProps<T> {
+export interface IFlatListProps<T> extends FlatListProps<T> {
   data?: any
   renderItem?: any
 }

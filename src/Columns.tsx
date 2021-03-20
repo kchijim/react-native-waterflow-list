@@ -158,7 +158,7 @@ const Columns = <T extends {
 
   return (
     <FlatList
-      data={columns}
+      data={props.data && props.data.length > 0 ? columns : []}
       keyExtractor={(columnItem: T) => `item-${columnItem._keyForItem_}`}
       onScroll={(e: any) => {
         props.onEndReached(e);

@@ -22,7 +22,7 @@ export interface IColumnsProps<T> {
   renderItem: ({ item, index }: { item: T, index: number }) => JSX.Element
   keyForItem: (item: T) => string
   onEndReached: (event: NativeSyntheticEvent<NativeScrollEvent>) => void
-  onScroll: (event: NativeSyntheticEvent<NativeScrollEvent>) => void
+  onScroll?: (event: NativeSyntheticEvent<NativeScrollEvent>) => void
 
   columnsFlatListProps?: IFlatListProps<T>
   columnFlatListProps?: IFlatListProps<T>
